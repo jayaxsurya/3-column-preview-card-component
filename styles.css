@@ -1,0 +1,100 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 12px;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.box-1 {
+    background-color: hsl(31, 77%, 52%);
+    
+}
+.box-2 {
+    background-color:hsl(184, 100%, 22%);
+
+}
+.box-3 {
+    background-color: hsl(179, 100%, 13%);
+
+}
+
+.box {
+    padding: 40px;
+}
+
+.box h2 {
+    font-family: 'Big Shoulders Display',cursive;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.box a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    margin-top:60px;
+    padding: 13px 26px ;
+    border-radius: 26px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all 0.3s ease-out;
+
+}
+
+.box-1 a {
+    color: hsl(31, 77%, 52%);
+}
+
+.box-2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+.box-3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+.box a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent ;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
